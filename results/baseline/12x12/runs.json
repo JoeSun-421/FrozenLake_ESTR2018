@@ -1,0 +1,380 @@
+[
+  {
+    "group": "main",
+    "map_seed": 2018,
+    "training_seed": 11,
+    "rows": [
+      "SFFFFFFFFFFF",
+      "FHFFFFFHHFHF",
+      "HFHFFFFFFHFF",
+      "FFFFHFFFHFFF",
+      "FFFFFFFFFFFF",
+      "FFFFHFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFHFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFHFFFFFFFF",
+      "FFFHHFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2018,
+    "training_seed": 22,
+    "rows": [
+      "SFFFFFFFFFFF",
+      "FHFFFFFHHFHF",
+      "HFHFFFFFFHFF",
+      "FFFFHFFFHFFF",
+      "FFFFFFFFFFFF",
+      "FFFFHFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFHFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFHFFFFFFFF",
+      "FFFHHFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2018,
+    "training_seed": 33,
+    "rows": [
+      "SFFFFFFFFFFF",
+      "FHFFFFFHHFHF",
+      "HFHFFFFFFHFF",
+      "FFFFHFFFHFFF",
+      "FFFFFFFFFFFF",
+      "FFFFHFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFHFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFHFFFFFFFF",
+      "FFFHHFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2019,
+    "training_seed": 11,
+    "rows": [
+      "SFFFFFFFFFFF",
+      "FFFFHFFHFFFF",
+      "FFFFHFFFFFFF",
+      "FFFFHFFFHFHF",
+      "FFFHFFFFFFFH",
+      "FHFFFHFHFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFHFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "HFFFFFFHFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2019,
+    "training_seed": 22,
+    "rows": [
+      "SFFFFFFFFFFF",
+      "FFFFHFFHFFFF",
+      "FFFFHFFFFFFF",
+      "FFFFHFFFHFHF",
+      "FFFHFFFFFFFH",
+      "FHFFFHFHFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFHFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "HFFFFFFHFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2019,
+    "training_seed": 33,
+    "rows": [
+      "SFFFFFFFFFFF",
+      "FFFFHFFHFFFF",
+      "FFFFHFFFFFFF",
+      "FFFFHFFFHFHF",
+      "FFFHFFFFFFFH",
+      "FHFFFHFHFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFHFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "HFFFFFFHFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2020,
+    "training_seed": 11,
+    "rows": [
+      "SFFFFFHFFFFF",
+      "FFFFFFFFFHFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFH",
+      "FFFFFFFFFFFF",
+      "FHFFFFFHHFHF",
+      "FFHFFFFFHFFF",
+      "FFFFFFFFHFFH",
+      "FFHFFFFFFFFF",
+      "FFFFFFFFHFFF",
+      "FFFFHFFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2020,
+    "training_seed": 22,
+    "rows": [
+      "SFFFFFHFFFFF",
+      "FFFFFFFFFHFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFH",
+      "FFFFFFFFFFFF",
+      "FHFFFFFHHFHF",
+      "FFHFFFFFHFFF",
+      "FFFFFFFFHFFH",
+      "FFHFFFFFFFFF",
+      "FFFFFFFFHFFF",
+      "FFFFHFFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "main",
+    "map_seed": 2020,
+    "training_seed": 33,
+    "rows": [
+      "SFFFFFHFFFFF",
+      "FFFFFFFFFHFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFH",
+      "FFFFFFFFFFFF",
+      "FHFFFFFHHFHF",
+      "FFHFFFFFHFFF",
+      "FFFFFFFFHFFH",
+      "FFHFFFFFFFFF",
+      "FFFFFFFFHFFF",
+      "FFFFHFFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2021,
+    "training_seed": 44,
+    "rows": [
+      "SFFFFHFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "HFHFFFFFHFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFHFFFFH",
+      "FFFFFFFFHHFF",
+      "HFFHFHFFFFFF",
+      "FFHHFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFHFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2021,
+    "training_seed": 55,
+    "rows": [
+      "SFFFFHFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "HFHFFFFFHFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFHFFFFH",
+      "FFFFFFFFHHFF",
+      "HFFHFHFFFFFF",
+      "FFHHFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFHFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2021,
+    "training_seed": 66,
+    "rows": [
+      "SFFFFHFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "HFHFFFFFHFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFHFFFFH",
+      "FFFFFFFFHHFF",
+      "HFFHFHFFFFFF",
+      "FFHHFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFHFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2022,
+    "training_seed": 44,
+    "rows": [
+      "SFFFFFFFFHFF",
+      "FHFFHFFFFFFF",
+      "FFHFFFFFFHFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFHF",
+      "FFFFFFFFHFFF",
+      "FFFHFFFFFFHF",
+      "FFFFFFFFHFFF",
+      "FHFFFFFHFFFF",
+      "FFFFFHHFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2022,
+    "training_seed": 55,
+    "rows": [
+      "SFFFFFFFFHFF",
+      "FHFFHFFFFFFF",
+      "FFHFFFFFFHFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFHF",
+      "FFFFFFFFHFFF",
+      "FFFHFFFFFFHF",
+      "FFFFFFFFHFFF",
+      "FHFFFFFHFFFF",
+      "FFFFFHHFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2022,
+    "training_seed": 66,
+    "rows": [
+      "SFFFFFFFFHFF",
+      "FHFFHFFFFFFF",
+      "FFHFFFFFFHFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFHF",
+      "FFFFFFFFHFFF",
+      "FFFHFFFFFFHF",
+      "FFFFFFFFHFFF",
+      "FHFFFFFHFFFF",
+      "FFFFFHHFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2023,
+    "training_seed": 44,
+    "rows": [
+      "SFFFFFFFFHFF",
+      "HFFFHFFFFHFF",
+      "FFFFFFHFFFFH",
+      "FHFFHFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FHHFFFFFFFFF",
+      "FFFFFHFFFHFF",
+      "FFFFFFFFFFFF",
+      "FHFFFFFFFFFF",
+      "FHFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2023,
+    "training_seed": 55,
+    "rows": [
+      "SFFFFFFFFHFF",
+      "HFFFHFFFFHFF",
+      "FFFFFFHFFFFH",
+      "FHFFHFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FHHFFFFFFFFF",
+      "FFFFFHFFFHFF",
+      "FFFFFFFFFFFF",
+      "FHFFFFFFFFFF",
+      "FHFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  },
+  {
+    "group": "validation",
+    "map_seed": 2023,
+    "training_seed": 66,
+    "rows": [
+      "SFFFFFFFFHFF",
+      "HFFFHFFFFHFF",
+      "FFFFFFHFFFFH",
+      "FHFFHFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FHHFFFFFFFFF",
+      "FFFFFHFFFHFF",
+      "FFFFFFFFFFFF",
+      "FHFFFFFFFFFF",
+      "FHFFFFFFFFFF",
+      "FFFFFFFFFFFF",
+      "FFFFFFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 22
+  }
+]

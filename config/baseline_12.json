@@ -1,0 +1,12 @@
+{
+  "extends": "baseline_8.json",
+  "name": "baseline_12",
+  "environment": {"size": 12, "horizon": 576},
+  "training": {
+    "interactions": 1000000,
+    "chunk_steps": 20000,
+    "alpha": {"initial": 0.1, "final": 0.1, "switch_step": 0},
+    "epsilon": {"initial": 1.0, "final": 0.05, "decay_steps": 800000}
+  },
+  "presentation": {"snapshots": [0, 100000, 500000, 1000000]}
+}

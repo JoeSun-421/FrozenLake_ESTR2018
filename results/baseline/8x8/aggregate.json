@@ -1,0 +1,64 @@
+{
+  "experiment": "baseline_8",
+  "variant": "baseline",
+  "size": 8,
+  "initialization": {
+    "method": "zero",
+    "value": 0.0
+  },
+  "groups": {
+    "main": {
+      "runs": 9,
+      "mean_success": 0.9856914846208171,
+      "minimum_success": 0.9497104912856253,
+      "maximum_success": 0.9997802586348075,
+      "monte_carlo_mean": 0.9867111111111111,
+      "mean_return": 0.509016649289638,
+      "random_success": 0.005992439710507725,
+      "random_return": 0.0035292401563638606,
+      "training_goals": 7958,
+      "zero_q_tables": 0
+    },
+    "validation": {
+      "runs": 9,
+      "mean_success": 0.9274194618766783,
+      "minimum_success": 0.7165646157759722,
+      "maximum_success": 0.9996369583452257,
+      "monte_carlo_mean": 0.9287333333333332,
+      "mean_return": 0.4718726500012829,
+      "random_success": 0.008058651755801165,
+      "random_return": 0.00447688946873511,
+      "training_goals": 6652,
+      "zero_q_tables": 0
+    }
+  },
+  "representative": {
+    "index": 0,
+    "group": "main",
+    "map_seed": 2018,
+    "training_seed": 11,
+    "interactions": 100000,
+    "success_probability": 0.9880560259087117,
+    "failure_probability": 0.011909773166881089,
+    "truncation_probability": 3.420092441053655e-05,
+    "discounted_return": 0.5602701447769217,
+    "mean_episode_length": 60.32863342418878,
+    "successful_episode_length": 60.54767109859179,
+    "monte_carlo_success": 0.9886,
+    "evaluation_episodes": 5000,
+    "random_success": 0.004965431854489534,
+    "random_return": 0.0031382895491655696,
+    "completed_training_episodes": 3260,
+    "training_goals": 1136,
+    "nonzero_q_entries": 212,
+    "visited_state_action_fraction": 1.0
+  },
+  "evaluation": {
+    "horizon": 256,
+    "gamma": 0.99,
+    "exploratory": false,
+    "ties": "uniform",
+    "exact_seconds": 5.86713795200194,
+    "monte_carlo_and_serialization_seconds": 5.100566798995715
+  }
+}

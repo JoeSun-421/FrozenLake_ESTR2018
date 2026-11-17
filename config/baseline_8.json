@@ -1,0 +1,19 @@
+{
+  "name": "baseline_8",
+  "variant": "baseline",
+  "environment": {"size": 8, "hole_fraction": 0.1, "intended_probability": 0.3333333333333333, "horizon": 256},
+  "training": {
+    "interactions": 100000,
+    "chunk_steps": 2000,
+    "gamma": 0.99,
+    "alpha": {"initial": 0.7, "final": 0.1, "switch_step": 37500},
+    "epsilon": {"initial": 1.0, "final": 0.05, "decay_steps": 25000}
+  },
+  "initialization": {"method": "zero", "value": 0.0},
+  "groups": {
+    "main": {"map_seeds": [2018, 2019, 2020], "training_seeds": [11, 22, 33]},
+    "validation": {"map_seeds": [2021, 2022, 2023], "training_seeds": [44, 55, 66]}
+  },
+  "evaluation": {"episodes": 5000, "seed_offset": 123456},
+  "presentation": {"map_seed": 2018, "training_seed": 11, "snapshots": [0, 10000, 50000, 100000]}
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "experiment": "baseline_16",
+  "runs": 18,
+  "training_interactions": 9000000,
+  "completed_episodes": 784766,
+  "training_goals": 10,
+  "initialization": {
+    "method": "zero",
+    "value": 0.0
+  },
+  "numerical_reference": "passed",
+  "raw_logs_and_snapshots": "passed",
+  "model_evaluation": "passed"
+}

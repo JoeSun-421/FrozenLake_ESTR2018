@@ -1,0 +1,63 @@
+baseline_16: 10,000/500,000 interactions per learner
+baseline_16: 20,000/500,000 interactions per learner
+baseline_16: 30,000/500,000 interactions per learner
+baseline_16: 40,000/500,000 interactions per learner
+baseline_16: 50,000/500,000 interactions per learner
+baseline_16: 60,000/500,000 interactions per learner
+baseline_16: 70,000/500,000 interactions per learner
+baseline_16: 80,000/500,000 interactions per learner
+baseline_16: 90,000/500,000 interactions per learner
+baseline_16: 100,000/500,000 interactions per learner
+baseline_16: 110,000/500,000 interactions per learner
+baseline_16: 120,000/500,000 interactions per learner
+baseline_16: 130,000/500,000 interactions per learner
+baseline_16: 140,000/500,000 interactions per learner
+baseline_16: 150,000/500,000 interactions per learner
+baseline_16: 160,000/500,000 interactions per learner
+baseline_16: 170,000/500,000 interactions per learner
+baseline_16: 180,000/500,000 interactions per learner
+baseline_16: 190,000/500,000 interactions per learner
+baseline_16: 200,000/500,000 interactions per learner
+baseline_16: 210,000/500,000 interactions per learner
+baseline_16: 220,000/500,000 interactions per learner
+baseline_16: 230,000/500,000 interactions per learner
+baseline_16: 240,000/500,000 interactions per learner
+baseline_16: 250,000/500,000 interactions per learner
+baseline_16: 260,000/500,000 interactions per learner
+baseline_16: 270,000/500,000 interactions per learner
+baseline_16: 280,000/500,000 interactions per learner
+baseline_16: 290,000/500,000 interactions per learner
+baseline_16: 300,000/500,000 interactions per learner
+baseline_16: 310,000/500,000 interactions per learner
+baseline_16: 320,000/500,000 interactions per learner
+baseline_16: 330,000/500,000 interactions per learner
+baseline_16: 340,000/500,000 interactions per learner
+baseline_16: 350,000/500,000 interactions per learner
+baseline_16: 360,000/500,000 interactions per learner
+baseline_16: 370,000/500,000 interactions per learner
+baseline_16: 380,000/500,000 interactions per learner
+baseline_16: 390,000/500,000 interactions per learner
+baseline_16: 400,000/500,000 interactions per learner
+baseline_16: 410,000/500,000 interactions per learner
+baseline_16: 420,000/500,000 interactions per learner
+baseline_16: 430,000/500,000 interactions per learner
+baseline_16: 440,000/500,000 interactions per learner
+baseline_16: 450,000/500,000 interactions per learner
+baseline_16: 460,000/500,000 interactions per learner
+baseline_16: 470,000/500,000 interactions per learner
+baseline_16: 480,000/500,000 interactions per learner
+baseline_16: 490,000/500,000 interactions per learner
+baseline_16: 500,000/500,000 interactions per learner
+{
+  "status": "complete",
+  "timing": {
+    "compile_seconds": 0.4172429350001039,
+    "discarded_warmup_seconds": 0.26541937100409996,
+    "reference_check_seconds": 0.271672253998986,
+    "synchronized_compute_seconds": 12.51513050399808,
+    "transfer_seconds": 0.17452605497965124,
+    "episode_logging_seconds": 6.339144871970348,
+    "training_and_artifact_seconds": 19.26246756099863,
+    "compile_reference_training_seconds": 20.255593426001724
+  }
+}

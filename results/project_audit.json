@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "requirements": {
+    "english_readme_with_figures_and_results": "README.md",
+    "single_cuda_training_implementation": "src/frozenlake/train.py",
+    "neutral_titles": true,
+    "legacy_files_archived_outside_project": true,
+    "only_used_figure_families": 10,
+    "clear_directory_structure": [
+      "src/frozenlake",
+      "config",
+      "figure",
+      "test",
+      "gui",
+      "docker",
+      "report",
+      "references",
+      "results/baseline"
+    ],
+    "experimental_report": "report/report.md",
+    "matched_optimistic_16_interface": "config/optimistic_16.json"
+  },
+  "verification": {
+    "published_baselines": 3,
+    "verified_training_runs": 54,
+    "unit_tests": 8,
+    "local_document_links_checked": 28,
+    "clean_install": "passed",
+    "viewer_interactions": "passed",
+    "control_smoke_and_comparison": "passed",
+    "archive_files_verified": 4095
+  },
+  "environment": {
+    "manager": "uv",
+    "lockfile": "uv.lock",
+    "uv_version": "0.13.8",
+    "host_python": "3.10",
+    "training_python": "3.11",
+    "locked_sync": "passed",
+    "clean_install": "passed",
+    "container_smoke": "passed"
+  }
+}

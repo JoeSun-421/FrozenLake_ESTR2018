@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "id": "baseline_8",
+      "label": "8×8 — baseline",
+      "size": 8,
+      "variant": "baseline",
+      "path": "results/baseline/8x8"
+    },
+    {
+      "id": "baseline_12",
+      "label": "12×12 — baseline",
+      "size": 12,
+      "variant": "baseline",
+      "path": "results/baseline/12x12"
+    },
+    {
+      "id": "baseline_16",
+      "label": "16×16 — baseline",
+      "size": 16,
+      "variant": "baseline",
+      "path": "results/baseline/16x16"
+    }
+  ],
+  "future_work": {
+    "optimistic_16": {
+      "config": "config/optimistic_16.json",
+      "status": "not_run"
+    }
+  }
+}

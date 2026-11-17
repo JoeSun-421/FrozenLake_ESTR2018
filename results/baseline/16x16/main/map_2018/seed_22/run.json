@@ -1,0 +1,26 @@
+{
+  "index": 1,
+  "group": "main",
+  "map_seed": 2018,
+  "training_seed": 22,
+  "rows": [
+    "SFFFFFFFFFFFFFFF",
+    "HFFFFFHFFFFFFFFF",
+    "FHHFFHFFFFHFFHFF",
+    "FFFFFFFFFHFFFFFH",
+    "FFFFFFFHFFFHFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FHFFFFHFFFFFFFFF",
+    "FFFFHFFFFFFFFFFF",
+    "FFFFFFFHFFHFFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FFFFHFFFFFFFFFFF",
+    "FFFFFHFFFFFFFFFF",
+    "FFFFHFHFFFHFFFFF",
+    "FFFFFFFFFHFFHFFF",
+    "FFFFFFFFFFHFFHFG"
+  ],
+  "generation_attempts": 1,
+  "shortest_path": 30
+}

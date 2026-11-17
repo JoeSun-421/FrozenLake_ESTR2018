@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "prefix_steps": 2000,
+  "nonzero_q_entries": 31,
+  "max_q_difference": 1.1102230246251565e-16
+}

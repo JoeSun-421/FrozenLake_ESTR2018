@@ -1,0 +1,11 @@
+{
+  "extends": "baseline_8.json",
+  "name": "smoke",
+  "training": {"interactions": 4000, "chunk_steps": 1000},
+  "groups": {
+    "main": {"map_seeds": [9001], "training_seeds": [7]},
+    "validation": {"map_seeds": [], "training_seeds": []}
+  },
+  "evaluation": {"episodes": 200},
+  "presentation": {"map_seed": 9001, "training_seed": 7, "snapshots": [0, 1000, 2000, 4000]}
+}

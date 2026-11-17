@@ -1,0 +1,18 @@
+{
+  "index": 17,
+  "group": "validation",
+  "map_seed": 2023,
+  "training_seed": 66,
+  "rows": [
+    "SFFFFFHF",
+    "HFHFFFHF",
+    "FFFHFFFF",
+    "FFFHFFFF",
+    "FFFFFFFF",
+    "FFFFFFFF",
+    "FFFFFFFF",
+    "FFFFFFFG"
+  ],
+  "generation_attempts": 1,
+  "shortest_path": 14
+}

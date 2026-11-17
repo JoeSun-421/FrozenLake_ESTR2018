@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "experiment": "baseline_12",
+  "variant": "baseline",
+  "backend": "gpu",
+  "device": "cuda:0",
+  "device_kind": "NVIDIA GeForce RTX 4090 D",
+  "hardware": "NVIDIA GeForce RTX 4090 D, 595.99.02, 49140 MiB",
+  "python_version": "3.11.9",
+  "jax_version": "0.5.3",
+  "numpy_version": "1.26.4",
+  "uid": 1001,
+  "gid": 1001,
+  "learners": 18,
+  "interactions_per_learner": 1000000,
+  "q_dtype": "float64",
+  "source_sha256": {
+    "__init__.py": "45717032bd54d33ae85cfb96ded3d69a187e4e2ecca9da82e69831c2e8042c0e",
+    "__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "cli.py": "e6ab0a6f436134f9c23102c864c2a6b89062511aaf94d64623ef9b01856cf657",
+    "configuration.py": "010526a4e2ec4299ae49921aa3f88f23314be4c70a7da5453d4d50e42993eaaf",
+    "environment.py": "e853840d9dcac9f25755928174744ab0fcc9bb9b74539f59d8f7aab37df5d219",
+    "evaluation.py": "aab562e1de7584529f95cad930baebf05145c439985b10304b429c2edfa214af",
+    "initialization.py": "6cc2779720123f47aad7ad5f7e81ca5403c26bb54aed551dbb81e00c5e5a42ac",
+    "learner.py": "8719dae68251d9081e67afab39cd978ae40856711dba79ff2f8a65b7dc5a0ea0",
+    "runtime.py": "49a8d44ff2ab68041e6b99a3a8eb833fec035af8d87691e490e6a04222fa0943",
+    "train.py": "66b87c71b5f38e24819ba6e630a7912a959b58589dbc703c50cc7473ba9a669c"
+  },
+  "completed_episodes": [
+    57207,
+    56445,
+    59370,
+    18877,
+    19348,
+    23028,
+    13943,
+    14498,
+    13633,
+    29641,
+    23232,
+    26025,
+    78024,
+    87206,
+    87107,
+    63412,
+    65686,
+    67948
+  ],
+  "total_training_interactions": 18000000,
+  "timing": {
+    "compile_seconds": 0.3972181059943978,
+    "discarded_warmup_seconds": 0.5101084549969528,
+    "reference_check_seconds": 0.33442835999449017,
+    "synchronized_compute_seconds": 24.81775814001594,
+    "transfer_seconds": 0.2589927299777628,
+    "episode_logging_seconds": 8.01068151898653,
+    "training_and_artifact_seconds": 33.35152389900031,
+    "compile_reference_training_seconds": 34.63081230500393
+  },
+  "final_array_devices": [
+    "cuda:0"
+  ]
+}

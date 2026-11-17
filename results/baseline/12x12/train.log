@@ -1,0 +1,63 @@
+baseline_12: 20,000/1,000,000 interactions per learner
+baseline_12: 40,000/1,000,000 interactions per learner
+baseline_12: 60,000/1,000,000 interactions per learner
+baseline_12: 80,000/1,000,000 interactions per learner
+baseline_12: 100,000/1,000,000 interactions per learner
+baseline_12: 120,000/1,000,000 interactions per learner
+baseline_12: 140,000/1,000,000 interactions per learner
+baseline_12: 160,000/1,000,000 interactions per learner
+baseline_12: 180,000/1,000,000 interactions per learner
+baseline_12: 200,000/1,000,000 interactions per learner
+baseline_12: 220,000/1,000,000 interactions per learner
+baseline_12: 240,000/1,000,000 interactions per learner
+baseline_12: 260,000/1,000,000 interactions per learner
+baseline_12: 280,000/1,000,000 interactions per learner
+baseline_12: 300,000/1,000,000 interactions per learner
+baseline_12: 320,000/1,000,000 interactions per learner
+baseline_12: 340,000/1,000,000 interactions per learner
+baseline_12: 360,000/1,000,000 interactions per learner
+baseline_12: 380,000/1,000,000 interactions per learner
+baseline_12: 400,000/1,000,000 interactions per learner
+baseline_12: 420,000/1,000,000 interactions per learner
+baseline_12: 440,000/1,000,000 interactions per learner
+baseline_12: 460,000/1,000,000 interactions per learner
+baseline_12: 480,000/1,000,000 interactions per learner
+baseline_12: 500,000/1,000,000 interactions per learner
+baseline_12: 520,000/1,000,000 interactions per learner
+baseline_12: 540,000/1,000,000 interactions per learner
+baseline_12: 560,000/1,000,000 interactions per learner
+baseline_12: 580,000/1,000,000 interactions per learner
+baseline_12: 600,000/1,000,000 interactions per learner
+baseline_12: 620,000/1,000,000 interactions per learner
+baseline_12: 640,000/1,000,000 interactions per learner
+baseline_12: 660,000/1,000,000 interactions per learner
+baseline_12: 680,000/1,000,000 interactions per learner
+baseline_12: 700,000/1,000,000 interactions per learner
+baseline_12: 720,000/1,000,000 interactions per learner
+baseline_12: 740,000/1,000,000 interactions per learner
+baseline_12: 760,000/1,000,000 interactions per learner
+baseline_12: 780,000/1,000,000 interactions per learner
+baseline_12: 800,000/1,000,000 interactions per learner
+baseline_12: 820,000/1,000,000 interactions per learner
+baseline_12: 840,000/1,000,000 interactions per learner
+baseline_12: 860,000/1,000,000 interactions per learner
+baseline_12: 880,000/1,000,000 interactions per learner
+baseline_12: 900,000/1,000,000 interactions per learner
+baseline_12: 920,000/1,000,000 interactions per learner
+baseline_12: 940,000/1,000,000 interactions per learner
+baseline_12: 960,000/1,000,000 interactions per learner
+baseline_12: 980,000/1,000,000 interactions per learner
+baseline_12: 1,000,000/1,000,000 interactions per learner
+{
+  "status": "complete",
+  "timing": {
+    "compile_seconds": 0.3972181059943978,
+    "discarded_warmup_seconds": 0.5101084549969528,
+    "reference_check_seconds": 0.33442835999449017,
+    "synchronized_compute_seconds": 24.81775814001594,
+    "transfer_seconds": 0.2589927299777628,
+    "episode_logging_seconds": 8.01068151898653,
+    "training_and_artifact_seconds": 33.35152389900031,
+    "compile_reference_training_seconds": 34.63081230500393
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "index": 1,
+  "group": "main",
+  "map_seed": 2018,
+  "training_seed": 22,
+  "rows": [
+    "SFFFFFFFFFFF",
+    "FHFFFFFHHFHF",
+    "HFHFFFFFFHFF",
+    "FFFFHFFFHFFF",
+    "FFFFFFFFFFFF",
+    "FFFFHFFFFFFF",
+    "FFFFFFFFFFFF",
+    "FFFFFHFFFFFF",
+    "FFFFFFFFFFFF",
+    "FFFFFFFFFFFF",
+    "FFFHFFFFFFFF",
+    "FFFHHFFFFFFG"
+  ],
+  "generation_attempts": 1,
+  "shortest_path": 22
+}

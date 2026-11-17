@@ -1,0 +1,21 @@
+{
+  "index": 13,
+  "group": "validation",
+  "map_seed": 2022,
+  "training_seed": 55,
+  "interactions": 100000,
+  "success_probability": 0.9934599645257857,
+  "failure_probability": 0.0064822570950482305,
+  "truncation_probability": 5.777837917006865e-05,
+  "discounted_return": 0.5572672368413943,
+  "mean_episode_length": 61.772176018426876,
+  "successful_episode_length": 61.891791324544776,
+  "monte_carlo_success": 0.9938,
+  "evaluation_episodes": 5000,
+  "random_success": 0.011819902648942757,
+  "random_return": 0.006854901306304748,
+  "completed_training_episodes": 1593,
+  "training_goals": 926,
+  "nonzero_q_entries": 211,
+  "visited_state_action_fraction": 0.9824561403508771
+}

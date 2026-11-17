@@ -1,0 +1,4 @@
+{
+  "container_wall_seconds": 21.210247094997612,
+  "includes": "container start, Python/runtime initialization, validation, training and output files"
+}

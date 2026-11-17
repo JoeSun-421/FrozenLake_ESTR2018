@@ -1,0 +1,26 @@
+{
+  "index": 12,
+  "group": "validation",
+  "map_seed": 2022,
+  "training_seed": 44,
+  "rows": [
+    "SHFFFFHFFFFFFHFF",
+    "FFFHHFHFFFFFFHFF",
+    "FFFHFFFHFFFFFFFF",
+    "FHHFHFFFFFFFFFFF",
+    "FFFFFFFFFFHHFFFF",
+    "FFFFHFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FFFFFFFHFFFHFFFF",
+    "FFHFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FFFFFFFFFFFFFFFF",
+    "FHFHFHFFFFFFFFFF",
+    "FFFHFFHFFFFFHFHF",
+    "FFFFFFFFFFFFFFFG"
+  ],
+  "generation_attempts": 2,
+  "shortest_path": 30
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "baseline_16.json",
+  "name": "optimistic_16",
+  "variant": "optimistic",
+  "initialization": {"method": "optimistic", "value": 1.0}
+}

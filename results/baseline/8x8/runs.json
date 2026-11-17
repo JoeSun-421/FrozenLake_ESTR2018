@@ -1,0 +1,308 @@
+[
+  {
+    "group": "main",
+    "map_seed": 2018,
+    "training_seed": 11,
+    "rows": [
+      "SFFFFFHF",
+      "FHFHFFFF",
+      "FFHFFFFF",
+      "FFFFFHFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FHFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2018,
+    "training_seed": 22,
+    "rows": [
+      "SFFFFFHF",
+      "FHFHFFFF",
+      "FFHFFFFF",
+      "FFFFFHFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FHFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2018,
+    "training_seed": 33,
+    "rows": [
+      "SFFFFFHF",
+      "FHFHFFFF",
+      "FFHFFFFF",
+      "FFFFFHFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FHFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2019,
+    "training_seed": 11,
+    "rows": [
+      "SFFFFFFF",
+      "FHFFFFFF",
+      "FFHFFFHH",
+      "FFFHFFFH",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2019,
+    "training_seed": 22,
+    "rows": [
+      "SFFFFFFF",
+      "FHFFFFFF",
+      "FFHFFFHH",
+      "FFFHFFFH",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2019,
+    "training_seed": 33,
+    "rows": [
+      "SFFFFFFF",
+      "FHFFFFFF",
+      "FFHFFFHH",
+      "FFFHFFFH",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2020,
+    "training_seed": 11,
+    "rows": [
+      "SFFHFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFHFFH",
+      "FFFFFFFF",
+      "FFHHFFFF",
+      "FFFFFFHF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2020,
+    "training_seed": 22,
+    "rows": [
+      "SFFHFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFHFFH",
+      "FFFFFFFF",
+      "FFHHFFFF",
+      "FFFFFFHF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "main",
+    "map_seed": 2020,
+    "training_seed": 33,
+    "rows": [
+      "SFFHFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFHFFH",
+      "FFFFFFFF",
+      "FFHHFFFF",
+      "FFFFFFHF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2021,
+    "training_seed": 44,
+    "rows": [
+      "SFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFHF",
+      "FFFFFHFF",
+      "FHFFHFFF",
+      "FFFFFFFF",
+      "FHHFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2021,
+    "training_seed": 55,
+    "rows": [
+      "SFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFHF",
+      "FFFFFHFF",
+      "FHFFHFFF",
+      "FFFFFFFF",
+      "FHHFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2021,
+    "training_seed": 66,
+    "rows": [
+      "SFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFHF",
+      "FFFFFHFF",
+      "FHFFHFFF",
+      "FFFFFFFF",
+      "FHHFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2022,
+    "training_seed": 44,
+    "rows": [
+      "SFFFFFHF",
+      "FFFFHFFH",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFHF",
+      "FHFFFHFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2022,
+    "training_seed": 55,
+    "rows": [
+      "SFFFFFHF",
+      "FFFFHFFH",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFHF",
+      "FHFFFHFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2022,
+    "training_seed": 66,
+    "rows": [
+      "SFFFFFHF",
+      "FFFFHFFH",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFHF",
+      "FHFFFHFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2023,
+    "training_seed": 44,
+    "rows": [
+      "SFFFFFHF",
+      "HFHFFFHF",
+      "FFFHFFFF",
+      "FFFHFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2023,
+    "training_seed": 55,
+    "rows": [
+      "SFFFFFHF",
+      "HFHFFFHF",
+      "FFFHFFFF",
+      "FFFHFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  },
+  {
+    "group": "validation",
+    "map_seed": 2023,
+    "training_seed": 66,
+    "rows": [
+      "SFFFFFHF",
+      "HFHFFFHF",
+      "FFFHFFFF",
+      "FFFHFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFF",
+      "FFFFFFFG"
+    ],
+    "generation_attempts": 1,
+    "shortest_path": 14
+  }
+]

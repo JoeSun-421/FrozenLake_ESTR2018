@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FrozenLake Policy Viewer</title>
+<style>
+  :root{font-family:system-ui,sans-serif;color:#173243;background:#fafbf9}*{box-sizing:border-box}
+  body{margin:0 auto;max-width:1160px;padding:32px}h1{font-size:32px;margin:0 0 8px}p{line-height:1.5}
+  .subtitle{color:#596873;margin:0 0 28px}.controls{display:flex;gap:24px;flex-wrap:wrap;border-bottom:1px solid #dce3e7;padding-bottom:20px}
+  label{font-size:13px;color:#52646f;display:flex;flex-direction:column;gap:6px}select{font:inherit;color:#173243;background:white;border:1px solid #b9c6ce;border-radius:4px;padding:9px;min-width:170px}
+  .layout{display:grid;grid-template-columns:minmax(320px,610px) 1fr;gap:36px;margin-top:24px}.map{width:100%;height:auto;background:white}
+  .progress{display:flex;align-items:center;gap:14px;margin:15px 0}input[type=range]{flex:1;accent-color:#16697a}
+  #checkpoint{font-variant-numeric:tabular-nums;font-size:14px;min-width:135px;text-align:right}.legend{font-size:13px;color:#536873}
+  dl{margin:0}dt{color:#637480;font-size:13px;margin-top:20px}dd{margin:4px 0;font-size:25px;font-variant-numeric:tabular-nums}
+  h2{font-size:18px;margin:24px 0 10px}.note{font-size:13px;color:#5a6a75}#values{font-size:14px;border-collapse:collapse;width:100%}td,th{padding:8px;border-bottom:1px solid #dce3e7;text-align:right}th:first-child,td:first-child{text-align:left}
+  #error{color:#a33440}#chart{width:100%;height:155px;margin-top:12px;background:white}a{color:#16697a}
+  @media(max-width:800px){body{padding:20px}.layout{grid-template-columns:1fr}.controls{gap:12px}}
+</style>
+<h1>FrozenLake Policy Viewer</h1>
+<p class="subtitle">Inspect learned action values, chosen actions and policy quality at saved checkpoints.</p>
+<div class="controls">
+  <label>Experiment<select id="experiment" aria-label="Experiment"></select></label>
+  <label>Value shown<select id="mode" aria-label="Value shown"><option value="max">Maximum Q / greedy action</option><option value="0">Q(left)</option><option value="1">Q(down)</option><option value="2">Q(right)</option><option value="3">Q(up)</option></select></label>
+</div>
+<p id="error" role="alert"></p>
+<div class="layout">
+  <section>
+    <canvas class="map" id="map" width="608" height="608" aria-label="Learned action values on the lake"></canvas>
+    <div class="progress"><input id="step" type="range" min="0" value="0" aria-label="Training checkpoint"><span id="checkpoint"></span></div>
+    <p class="legend">Orange outline: start. H: hole. G: goal. Arrows: unique greedy actions. Dots: tied actions. Values use a fixed 0–1 scale.</p>
+    <p class="note">Select a cell to inspect all four action values. Arrow direction is the chosen action; actual movement can slip sideways.</p>
+  </section>
+  <section>
+    <dl><dt>Representative policy success</dt><dd id="success">—</dd><dt>Mean across main training runs</dt><dd id="mean">—</dd><dt>Run budget and initialization</dt><dd id="settings" style="font-size:17px">—</dd></dl>
+    <canvas id="chart" width="430" height="160" aria-label="Policy success over training interactions"></canvas>
+    <h2 id="cell">Cell values</h2>
+    <table id="values"><thead><tr><th>Action</th><th>Q estimate</th><th>Visits</th></tr></thead><tbody></tbody></table>
+    <p class="note">Q estimates describe discounted return, not success probability. Success is evaluated with a frozen greedy policy and a fixed episode cutoff.</p>
+    <p class="note" id="source"></p>
+    <p><a href="../report/report.md">Read the experiment report</a></p>
+  </section>
+</div>
+<script>
+  const $=id=>document.getElementById(id);let catalog,data,current=0,selected=0;
+  const palette=[[255,255,217],[199,233,180],[65,182,196],[34,94,168],[8,29,88]];
+  function color(value){const t=Math.max(0,Math.min(1,value))*4,i=Math.min(3,Math.floor(t)),f=t-i;return `rgb(${palette[i].map((v,k)=>Math.round(v+(palette[i+1][k]-v)*f)).join(',')})`;}
+  const percent=x=>(100*x).toFixed(x>0&&x<0.0001?4:2)+'%';
+  function render(){if(!data)return;const j=+$('step').value,n=data.size,q=data.q[j],visits=data.visits[j],ctx=$('map').getContext('2d'),w=608/n,mode=$('mode').value;
+    ctx.clearRect(0,0,608,608);
+    for(let r=0;r<n;r++)for(let c=0;c<n;c++){const s=r*n+c,tile=data.rows[r][c],best=Math.max(...q[s]),value=mode==='max'?best:q[s][+mode];
+      ctx.fillStyle=tile==='H'?'#223344':tile==='G'?'#2b8061':color(value);ctx.fillRect(c*w,r*w,w,w);ctx.strokeStyle='#fff';ctx.lineWidth=.7;ctx.strokeRect(c*w,r*w,w,w);
+      ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`${n<=8?14:10}px system-ui`;
+      ctx.fillStyle=tile==='H'||tile==='G'||value>.6?'white':'#173243';
+      if(tile==='H'||tile==='G')ctx.fillText(tile,(c+.5)*w,(r+.5)*w);else{ctx.fillText(value.toFixed(2),(c+.5)*w,(r+.38)*w);if(mode==='max'){const ties=q[s].map((v,a)=>v===best?a:-1).filter(a=>a>=0);ctx.fillText(ties.length===1?['←','↓','→','↑'][ties[0]]:'·',(c+.5)*w,(r+.72)*w);}}
+      if(tile==='S'){ctx.strokeStyle='#d58a19';ctx.lineWidth=3;ctx.strokeRect(c*w+2,r*w+2,w-4,w-4);}
+      if(s===selected){ctx.strokeStyle='#e35e43';ctx.lineWidth=2;ctx.strokeRect(c*w+5,r*w+5,w-10,w-10);}
+    }
+    $('checkpoint').textContent=data.steps[j].toLocaleString()+' interactions';$('success').textContent=percent(data.success[j]);$('mean').textContent=percent(data.mean_success[j]);
+    const cfg=data.config;$('settings').textContent=cfg.training.interactions.toLocaleString()+' interactions / Q₀ = '+cfg.initialization.value;
+    const r=Math.floor(selected/n),c=selected%n;$('cell').textContent=`Cell (${r+1}, ${c+1}) · ${data.rows[r][c]}`;
+    $('values').querySelector('tbody').innerHTML=['Left','Down','Right','Up'].map((a,k)=>`<tr><td>${a}</td><td>${q[selected][k].toFixed(6)}</td><td>${visits[selected][k].toLocaleString()}</td></tr>`).join('');
+    drawChart(j);document.body.dataset.checkpoint=String(data.steps[j]);
+  }
+  function drawChart(j){const ctx=$('chart').getContext('2d');ctx.clearRect(0,0,430,160);ctx.strokeStyle='#dce3e7';ctx.beginPath();ctx.moveTo(32,10);ctx.lineTo(32,135);ctx.lineTo(420,135);ctx.stroke();ctx.fillStyle='#637480';ctx.font='11px system-ui';ctx.fillText('100%',0,18);ctx.fillText('0',16,138);ctx.fillText('Training interactions',265,156);
+    ctx.strokeStyle='#16697a';ctx.lineWidth=2;ctx.beginPath();data.mean_success.forEach((v,i)=>{const x=32+388*data.steps[i]/data.steps.at(-1),y=135-120*v;if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();ctx.fillStyle='#d58a19';ctx.beginPath();ctx.arc(32+388*data.steps[j]/data.steps.at(-1),135-120*data.mean_success[j],4,0,Math.PI*2);ctx.fill();}
+  async function load(index){const record=catalog.experiments[index];const response=await fetch('../'+record.path+'/viewer.json');if(!response.ok)throw Error('Result data could not be loaded');data=await response.json();current=index;selected=0;$('step').max=data.steps.length-1;$('step').value=data.steps.length-1;$('source').textContent='Representative map '+data.config.presentation.map_seed+' / training seed '+data.config.presentation.training_seed+'. '+record.variant+' results.';render();document.body.dataset.loaded=record.id;}
+  $('experiment').addEventListener('change',()=>load(+$('experiment').value).catch(showError));$('mode').addEventListener('change',render);$('step').addEventListener('input',render);
+  $('map').addEventListener('click',event=>{if(!data)return;const box=$('map').getBoundingClientRect(),r=Math.floor((event.clientY-box.top)/box.height*data.size),c=Math.floor((event.clientX-box.left)/box.width*data.size);selected=Math.min(data.size*data.size-1,r*data.size+c);render();});
+  function showError(error){$('error').textContent=error.message;document.body.dataset.error='true';}
+  (async()=>{const response=await fetch('../results/catalog.json');if(!response.ok)throw Error('No published results found. Run the documented experiment pipeline first.');catalog=await response.json();$('experiment').innerHTML=catalog.experiments.map((r,i)=>`<option value="${i}">${r.label}</option>`).join('');await load(0);})().catch(showError);
+</script>
+</html>

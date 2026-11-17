@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "estr2018-frozenlake"
+version = "0.1.0"
+description = "Reproducible tabular Q-learning experiments on stochastic FrozenLake"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = ["numpy>=1.26,<3", "matplotlib>=3.8,<4", "gymnasium==1.4.0"]
+
+[dependency-groups]
+train = ["jax[cuda12]==0.5.3", "numpy==1.26.4"]
+
+[project.scripts]
+frozenlake = "frozenlake.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+required-version = ">=0.13.8"
